@@ -1,12 +1,34 @@
+
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import React from "react";
-import { IoIosCall } from "react-icons/io";
+import { IoIosCall, IoMdLocate } from "react-icons/io";
+import { IoLocateSharp, IoLocationOutline, IoLocationSharp } from 'react-icons/io5';
+
+const MapComponent = () => (
+  <GoogleMap
+    id="circle-example"
+    mapContainerStyle={{
+      height: "400px",
+      width: "100%"
+    }}
+    zoom={10}
+    center={{
+      lat: 40.7128, // latitude for New York City
+      lng: -74.0060 // longitude for New York City
+    }}
+  >
+    <Marker
+      position={{ lat: 40.7128, lng: -74.0060 }} // coordinates for New York City
+    />
+  </GoogleMap>
+);
 
 const Contact = () => {
   return (
     <div className="flex items-center justify-center h-full bg-gradient-to-b from-black to-gray-800 p-4 text-white">
       <div className="w-full max-w-screen-lg mx-auto">
         <div className="text-center">
-          <h1 className="text-5xl font-bold border-b-4 border-lime-700 inline-block">
+          <h1 className="text-5xl mt-20 font-bold border-b-4 border-lime-700 inline-block">
             Get in Touch
           </h1>
         </div>
@@ -28,6 +50,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name="name"
+                  required
                   id="name"
                   placeholder="Enter your name"
                   className="p-3 w-full bg-transparent border-2 rounded-md text-white focus:outline-none"
@@ -41,6 +64,7 @@ const Contact = () => {
                   type="text"
                   name="email"
                   id="email"
+                  required
                   placeholder="Enter your email"
                   className="p-3 w-full bg-transparent border-2 rounded-md text-white focus:outline-none"
                 />
@@ -51,6 +75,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   name="message"
+                  
                   id="message"
                   placeholder="Enter your message"
                   rows="10"
@@ -67,17 +92,29 @@ const Contact = () => {
           </div>
 
           <div name = "phone"
-          className="w-full md:w-1/2 ml-20">
+          className="w-full md:w-1/2 ml-20 rounded-all">
             <div className="bg-lime-700 h-20 mt-16 rounded-lg  p-4 mb-4">
               <div className="flex items-center jsutify-center mb-6">
               <div className="rounded-full bg-white p-2">
                 <IoIosCall className="text-3xl text-lime-700" />
                 </div>
                 <div>
-                  <p className="text-2xl ml-10 items-center hover:rounded-md justify-centerfont-italic mt-2 text-white"> +1 551-344-7460</p> 
+                  <p className="text-1xl ml-10 items-center hover:rounded-md justify-center mt-2 text-white"> +1 551-344-7460</p> 
                 </div>
               </div>
             </div>
+          
+            <div className="bg-lime-700 h-20 mt-16 rounded-lg  p-4 mb-4">
+              <div className="flex items-center jsutify-center mb-6">
+              <div className="rounded-full bg-white p-2">
+                <IoLocationSharp className="text-3xl text-lime-700" />
+                </div>
+                <div>
+                  <p className="text-1xl ml-4 items-center hover:rounded-md justify-centerfont-italic mt-2 text-white"> New York City, New York, United States</p> 
+                </div>
+              </div>
+            </div>
+
             </div>
         </div>
       </div>
@@ -86,3 +123,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
