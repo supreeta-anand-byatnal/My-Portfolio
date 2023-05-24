@@ -1,6 +1,7 @@
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Links from './components/Links';
+import Experience from './components/Experience';
 import Contact from './components/Contact';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <Home/>
       <Links/>
       <Contact/>
-      
+      <Experience/> 
+
 
     </div>
   );

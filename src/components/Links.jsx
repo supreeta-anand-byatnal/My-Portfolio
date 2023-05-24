@@ -41,7 +41,7 @@ const Links = () => {
             Phone <IoIosCall size={30} />
           </>
         ),
-        href: "",
+        href: "#phone",
       },
       {
         id: 5,
@@ -50,7 +50,7 @@ const Links = () => {
             Location <IoLocationSharp size={30} />
           </>
         ),
-        href: "",
+        href: "#location",
       }
     ];
   
@@ -67,7 +67,7 @@ const Links = () => {
               }
             >
               <a
-                href={href}
+                href="#"
                 className="flex justify-between items-center w-full text-white font-semibold"
                 target="_blank"
                 rel="noreferrer"
