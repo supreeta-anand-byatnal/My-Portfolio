@@ -1,8 +1,8 @@
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Links from './components/Links';
-import Experience from './components/Experience';
 import Contact from './components/Contact';
+import About from './components/About';
 
 function App() {
   return (
@@ -10,9 +10,8 @@ function App() {
       <NavBar/>
       <Home/>
       <Links/>
+      <About/>
       <Contact/>
-      <Experience/> 
-
 
     </div>
   );
