@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Links from './components/Links';
 import Contact from './components/Contact';
 import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Links/>
       <About/>
       <Contact/>
-
+      <Footer/>
     </div>
   );
 }

@@ -75,11 +75,7 @@ const NavBar = () => {
           </ul>
         )}
       </div>
-      <footer className="bg-white py-4">
-        <div className="max-w-screen-lg mx-auto flex justify-center items-center">
-          <p className="text-gray-500">This is the footer content.</p>
-        </div>
-      </footer>
+      
     </div>
   );
 };

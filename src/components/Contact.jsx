@@ -66,7 +66,7 @@ const Contact = () => {
               </div>
 
               <div className="flex justify-center">
-                <button className="text-white bg-gradient-to-b from-lime-500 to-lime-900 px-6 py-3 rounded-md hover:scale-110 duration-300">
+                <button className="text-white bg-gradient-to-b mb-5 from-lime-500 to-lime-900 px-6 py-3 rounded-md hover:scale-110 duration-300">
                   Let's talk
                 </button>
               </div>
