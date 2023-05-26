@@ -31,8 +31,8 @@ const Personal = () => {
 
   return (
     <div>
-      <div className="bg-black py-8 w-full">
-        <div className="container mx-auto w-1/2 flex items-center justify-center">
+      <div name="about" className="h-full w-full py-5 bg-gradient from-gray-600 to-gray-800">
+      <div className="container mx-auto w-1/2 flex items-center justify-center">
           {images.map((image, index) => (
             <div
               key={index}
