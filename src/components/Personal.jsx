@@ -21,7 +21,7 @@ const Personal = () => {
     },
     {
       src: dogs,
-      text: "I take \"Work hard and pet dogs that you meet on vacation harder\" quote very seriously! ",
+      text: "I take the \"Work hard and pet dogs that you meet on your vacation harder\" quote very seriously! ",
     },
     {
       src: saree,
