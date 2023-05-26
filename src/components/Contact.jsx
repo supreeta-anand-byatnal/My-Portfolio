@@ -14,8 +14,9 @@ const Contact = () => {
             Get in Touch
           </h1>
         </div>
-        <p className="py-8 text-1xl w-1/2">
-          Please submit the form below to contact me. I would love to hear from you!
+        <p className="py-8 font-medium text-lg w-1/2">
+          I would love to hear from you! <br/>
+          Whether it is to collaborate on a project, a job opportunity or just to have a chat, feel free to drop a message!
         </p>
 
         <div className="flex flex-col md:flex-row">
@@ -66,7 +67,7 @@ const Contact = () => {
               </div>
 
               <div className="flex justify-center">
-                <button className="text-white bg-gradient-to-b mb-5 from-lime-500 to-lime-900 px-6 py-3 rounded-md hover:scale-110 duration-300">
+                <button className="text-white font-medium bg-gradient-to-b mb-5 from-lime-500 to-lime-900 px-6 py-3 rounded-md hover:scale-110 duration-300">
                   Let's talk
                 </button>
               </div>

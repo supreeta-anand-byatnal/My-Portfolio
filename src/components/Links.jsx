@@ -67,7 +67,7 @@ const Links = () => {
               }
             >
               <a
-                href="#"
+                href={href}
                 className="flex justify-between items-center w-full text-white font-semibold"
                 target="_blank"
                 rel="noreferrer"
