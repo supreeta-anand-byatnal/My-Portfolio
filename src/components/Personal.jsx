@@ -32,28 +32,32 @@ const Personal = () => {
   return (
     <div>
       <div name="about" className="h-full w-full py-5 bg-gradient from-gray-600 to-gray-800">
-      <div className="container mx-auto w-1/2 flex items-center justify-center">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className="relative mx-9 cursor-pointer" 
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
-            >
-              <img
-                src={image.src}
-                alt={`Image ${index + 1}`}
-                className={`w-64 border-lime-700 border-solid h-auto rounded-lg transition-opacity duration-300 ${
-                  activeIndex === index ? "opacity-50" : "opacity-100"
-                }`}
-              />
-              {activeIndex === index && (
-                <div className="absolute inset-0 border-lime-700 flex items-center justify-between">
-                  <p className="text-lg font-medium border-lime-700 text-center align-middle text-white">{image.text}</p>
-                </div>
-              )}
-            </div>
-          ))}
+        <div className="container mx-auto flex flex-col items-center justify-center">
+          <div className="flex flex-wrap justify-center">
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className="relative m-4 cursor-pointer"
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+              >
+                <img
+                  src={image.src}
+                  alt={`Image ${index + 1}`}
+                  className={`w-48 sm:w-64 h-auto rounded-lg transition-opacity duration-300 ${
+                    activeIndex === index ? "opacity-50" : "opacity-100"
+                  }`}
+                />
+                {activeIndex === index && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <p className="text-lg font-medium text-center text-white px-4">
+                      {image.text}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
