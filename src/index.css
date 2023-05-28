@@ -10,42 +10,20 @@
   }
 }
 .vertical-timeline-element-content {
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
-    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
-  padding: 2em 3em !important;
+  box-shadow: 0 0.2em 0.25em 0 rgba(0, 0, 0, 0.25),
+    0 0.2em 1em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 2em !important;
   background: black;
 }
 
 .date {
-  color: rgb(201, 251, 255);
+  color: white;
+  font-weight: bold;
+  font-size: large;
 }
 
 #description {
-  margin: 1.5em 0 2em 0;
-}
-
-.button {
-  text-decoration: none;
-  padding: 0.5em 1em;
-  border-radius: 5px;
-  color: white;
-}
-
-.workButton {
-  background-color: #06d6a0;
-}
-
-.workButton:hover {
-  background-color: rgb(77 124 15);
-}
-
-.schoolButton {
-  background-color: rgb(77 124 15);
-}
-
-.schoolButton:hover {
-  background-color: #365314
- 
+  margin: 1.0em 0 1em 0;
 }
 
 
@@ -53,8 +31,15 @@
   .vertical-timeline-element-date {
     display: block !important;
     float: none !important;
-    color: white;
-    margin-top: 1.5em;
+    color: white !important;  
+    font-style: bold !important;
+    font-size: large;
+  }
+
+  .vertical-timeline-element-content
+  {
+    color: black;
+    background-color: black;
   }
 }
 

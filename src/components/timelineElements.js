@@ -41,7 +41,7 @@ let timelineElements = [
     description:
       "Bachelor of Engineering in Information Science and Engineering",
        buttonText: "College Projects",
-    date: "2016 - 2020",
+    date: "August 2016 - May 2020",
     icon: "school",
   },
   

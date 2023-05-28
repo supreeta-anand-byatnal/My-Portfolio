@@ -21,7 +21,7 @@ const Experience = () => {
           </h1>
         </div>    
         </ div> 
-      <div className='bg-black py-5'><VerticalTimeline>
+      <div className='py-5'><VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
           let showButton =
@@ -39,14 +39,15 @@ const Experience = () => {
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
             >
-      
+              <div className="bg-lime-700 p-2 rounded-md text-white">
 
-              <h3 className="first-letter:vertical-timeline-element-title">
+              <h3 className="first-letter:vertical-timeline-element-title  text-lg">
                 {element.title}
               </h3>
-              <h5 className="vertical-timeline-element-subtitle">
+              <h5 className="vertical-timeline-element-subtitle text-sm">
                 {element.location}
               </h5>
+              </div>
               <p id="description">{element.description}</p>
           
             </VerticalTimelineElement>
