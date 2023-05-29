@@ -9,10 +9,13 @@
     font-family: 'Raleway', sans-serif;
   }
 }
+.date{
+  padding: 0.5em;
+}
 .vertical-timeline-element-content {
   box-shadow: 0 0.2em 0.25em 0 rgba(0, 0, 0, 0.25),
     0 0.2em 1em 0 rgba(0, 0, 0, 0.15) !important;
-  padding: 2em 2em !important;
+  padding: 0.5em 0.5em !important;
   background: black;
 }
 
@@ -21,7 +24,40 @@
   font-weight: bold;
   font-size: large;
 }
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.tab-container {
+  display: flex;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: 1px solid gray;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: darkgray;
+}
+
+.tab .tab-label {
+  font-size: 16px;
+}
+
+.tab.active {
+  background-color: #4d7c0f;
+  color: white;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
 #description {
   margin: 1.0em 0 1em 0;
 }
@@ -33,13 +69,15 @@
     float: none !important;
     color: white !important;  
     font-style: bold !important;
-    font-size: large;
+    font-size: medium;
   }
 
   .vertical-timeline-element-content
   {
     color: black;
     background-color: black;
+    height: 3em;
   }
 }
+
 
