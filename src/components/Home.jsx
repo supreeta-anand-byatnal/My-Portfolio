@@ -2,6 +2,8 @@ import React from 'react';
 import photo from '../assets/photo.jpg';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { Link, BrowserRouter as Router } from 'react-router-dom';
+import resumePDF from '../assets/resume.pdf';
+
 
 const Home = () => {
   return (
@@ -17,18 +19,17 @@ const Home = () => {
               everything, and that makes me an amazing Software Engineer!
             </p>
             <div className="flex justify-center">
-              <Link
-                to="/pdf"
-                target='_blank'
-                smooth
-                duration={100}
-                className="text-white w-fit p-4 flex items-center font-semibold rounded-md bg-gradient-to-r from-lime-500 to-lime-900 cursor-pointer"
-              >
-                View my resumé
-                <span className="group-hover:rotate-90 duration-300 ml-2">
-                  <MdOutlineKeyboardArrowRight />
-                </span>
-              </Link>
+            <a
+  href={resumePDF}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-white w-fit p-4 flex items-center font-semibold rounded-md bg-gradient-to-r from-lime-500 to-lime-900 cursor-pointer"
+>
+  View my resumé
+  <span className="group-hover:rotate-90 duration-300 ml-2">
+    <MdOutlineKeyboardArrowRight />
+  </span>
+</a>
             </div>
           </div>
           <div className="md:w-1/2 ml-20 relative">
