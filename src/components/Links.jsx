@@ -41,7 +41,8 @@ const Links = () => {
             Phone <IoIosCall size={30} />
           </>
         ),
-        href: "#contact",
+        href: "#",
+        className: "contact",
       },
       {
         id: 5,

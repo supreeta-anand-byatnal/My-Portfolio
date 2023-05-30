@@ -16,21 +16,40 @@ const Experience = () => {
   let schoolIconStyles = { background: "#4d7c0f" };
 
   return (
-    <div>
-      <div className="tabs">
-        <div className={`tab ${activeTab === "experience" ? "active" : ""}`} onClick={() => handleTabChange("experience")}>Experience</div>
+    <div name="experience" className="h-full w-full bg-gradient-to-b from-black via-black to-gray-800">     
+      
+      <div className="text-center">
+                <h1 className="text-5xl mt-20 mb-15 font-bold border-b-4 text-white border-lime-700 inline-block">Experience</h1>
+       </div>
+
+      <div className="tabs mt-10 text-black bg-black">
+      <div className={`tab ${activeTab === "experience" ? "active" : ""}`} onClick={() => handleTabChange("experience")}>Experience</div>
+       
         <div className={`tab ${activeTab === "schoolActivities" ? "active" : ""}`} onClick={() => handleTabChange("schoolActivities")}>School Activities</div>
+         
         <div className={`tab ${activeTab === "skills" ? "active" : ""}`} onClick={() => handleTabChange("skills")}>Skills</div>
       </div>
+      
 
-      {activeTab === "experience" && (
+      {activeTab === "schoolActivities" && (
         <div className="tab-content">
-          <div name="experience" className="h-full w-full bg-gradient-to-b from-black via-black to-gray-800">
+          <div name="school-activities" className="h-full w-full bg-gradient-to-b from-black via-black to-gray-800">
             <div className="w-2/3 mx-auto h-full">
               <div className="text-center">
-                <h1 className="text-5xl mt-20 mb-15 font-bold border-b-4 text-white border-lime-700 inline-block">Experience</h1>
+                <h1 className="text-5xl mt-20 mb-15 font-bold border-b-4 text-white border-lime-700 inline-block">School Activities</h1>
               </div>
-              <div className='h-full py-5'>
+              {/* Content for the School Activities tab */}
+            </div>
+          </div>
+        </div>
+      )}
+
+...
+      {activeTab === "experience" && (
+        <div className="tab-content">
+           
+              
+              <div className='h-full py-4'>
                 <VerticalTimeline>
                   {timelineElements.map((element) => {
                     let isWorkIcon = element.icon === "work";
@@ -54,36 +73,17 @@ const Experience = () => {
                 </VerticalTimeline>
               </div>
             </div>
-          </div>
-        </div>
+          
       )}
-
-      {activeTab === "schoolActivities" && (
-        <div className="tab-content">
-          <div name="school-activities" className="h-full w-full bg-gradient-to-b from-black via-black to-gray-800">
-            <div className="w-2/3 mx-auto h-full">
-              <div className="text-center">
-                <h1 className="text-5xl mt-20 mb-15 font-bold border-b-4 text-white border-lime-700 inline-block">School Activities</h1>
-              </div>
-              {/* Content for the School Activities tab */}
-            </div>
-          </div>
-        </div>
-      )}
-
-...
 
 {activeTab === "skills" && (
   <div className="tab-content">
-    <div name="skills" className="h-full w-full bg-gradient-to-b from-black via-black to-gray-800">
-      <div className="w-2/3 mx-auto h-full">
         <div className="text-center">
           <h1 className="text-5xl mt-20 mb-15 font-bold border-b-4 text-white border-lime-700 inline-block">Skills</h1>
         </div>
         {/* Content for the Skills tab */}
       </div>
-    </div>
-  </div>
+    
 )}
 </div>
 );
