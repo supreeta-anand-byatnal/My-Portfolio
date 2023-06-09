@@ -16,7 +16,7 @@ const Experience = () => {
   let schoolIconStyles = { background: "#4d7c0f" };
 
   return (
-    <div name="experience" className="h-full w-full bg-gradient-to-b from-black via-black to-gray-800">     
+    <div id = "experience" name="experience" className="h-full w-full bg-gradient-to-b from-black via-black to-gray-800">     
       
       <div className="text-center">
                 <h1 className="text-5xl mt-20 mb-15 font-bold border-b-4 text-white border-lime-700 inline-block">Experience</h1>
