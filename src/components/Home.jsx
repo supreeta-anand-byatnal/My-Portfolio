@@ -9,7 +9,7 @@ const Home = () => {
     <div id="home" name="home" className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full md:flex-row">
         <div className="flex flex-col justify-center items-center text-center h-full w-2/3 md:w-2/3">
-          <h2 className="text-4xl sm:text-7xl font-bold text-lime-600">&lt;Hello World/&gt;</h2>
+          <h2 className="text-4xl animate-falling-letters sm:text-7xl font-bold text-lime-600">&lt;Hello World/&gt;</h2>
           <h3 className="text-4xl sm:text-7xl font-bold text-white animate-slide-from-left">I'm Supreeta</h3>
           <p className="text-gray-300 mb-8 text-center text-lg max-w py-4 max-w-md">
             I'm a Software Engineer with over 2 years of experience. Currently, I am a graduate student at New York
@@ -30,7 +30,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="md:w-1/2 ml-20 relative">
+        <div className="md:w-1/2 ml-20 relative animate-slide-from-right">
           <img
             src={photo}
             alt="my profile"
