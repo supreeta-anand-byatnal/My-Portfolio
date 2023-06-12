@@ -114,6 +114,7 @@
   }
 }
 
+
 .animate-slide-from-above {
   animation: slideFromAbove 2s ease-out forwards;
 }

@@ -7,6 +7,12 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState("experience");
+  const skills = [
+    { name: "Skill 1", rating: 80 },
+    { name: "Skill 2", rating: 60 },
+    { name: "Skill 3", rating: 90 },
+    // Add more skills as needed
+  ];
 
   const handleTabChange = (tabName) => {
     setActiveTab(tabName);
@@ -78,12 +84,23 @@ const Experience = () => {
 
 {activeTab === "skills" && (
   <div className="tab-content">
-        <div className="text-center">
-          <h1 className="text-5xl mt-20 mb-15 font-bold border-b-4 text-white border-lime-700 inline-block">Skills</h1>
-        </div>
-        {/* Content for the Skills tab */}
-      </div>
-    
+  
+    <div className="flex text-center justify-center items-center h-full">
+      <ul className="text-white">
+        {skills.map((skill, index) => (
+          <li key={index} className="text-xl mb-4">
+            <span>{skill.name}</span>
+            <div className="relative h-2 bg-gray-700 rounded overflow-hidden mt-2">
+              <div
+                className="absolute top-0 left-0 h-full bg-lime-500"
+                style={{ width: `${skill.rating}%` }}
+              ></div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
 )}
 </div>
 );

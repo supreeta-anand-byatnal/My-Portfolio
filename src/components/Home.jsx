@@ -13,7 +13,7 @@ const Home = () => {
           <h3 className="text-4xl sm:text-7xl font-bold text-white animate-slide-from-left">I'm Supreeta</h3>
           <p className="text-gray-300 mb-8 text-center text-lg max-w py-4 max-w-md">
             I'm a Software Engineer with over 2 years of work experience. Currently, I am a grad student at <br/><b className='text-1.5rem text-lime-600'> New York
-            University, Courant</b> pursuing <b className = ' text-1.5rem text-lime-600'> Masters of Science in Computer Science </b>. I am passionate about the hows and whys of
+            University, Courant</b> pursuing <b className = 'text-1.5rem text-lime-600'> Masters of Science in Computer Science </b>. I am passionate about the hows and whys of
             everything, and that makes me an amazing Software Engineer!
           </p>
           <div className="flex justify-center">
@@ -21,7 +21,7 @@ const Home = () => {
               href={resumePDF}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white animate-slide-from-left w-fit p-4 flex items-center font-semibold rounded-md bg-gradient-to-r from-lime-500 to-lime-900 cursor-pointer"
+              className="text-white animate-slide-from-left p-4 flex items-center font-semibold rounded-md bg-gradient-to-r from-lime-500 to-lime-900 cursor-pointer"
             >
               View my resumé
               <span className="group-hover:rotate-90 duration-300 ml-2">
