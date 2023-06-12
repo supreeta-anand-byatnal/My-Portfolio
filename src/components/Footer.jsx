@@ -28,8 +28,8 @@ const Footer = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <a href="#experience" className="experience text-white hover:text-lime-600 transition-colors duration-300">Home</a> | <a href="/about" className="text-white hover:text-lime-600 transition-colors duration-300">About</a> | <a href="/portfolio" className="text-white hover:text-lime-600 transition-colors duration-300">Portfolio</a> |{' '}
-            <a href="#experience" className="experience text-white text-lg hover:text-lime-600 transition-colors duration-300">Experience</a> |{' '}  <a href="/contact" className="text-white hover:text-lime-600 transition-colors duration-300">Contact</a>
+            <a href="#home" className="experience text-white hover:text-lime-600 transition-colors duration-300">Home</a> | <a href="#about" className="text-white hover:text-lime-600 transition-colors duration-300">About</a> | <a href="#portfolio" className="text-white hover:text-lime-600 transition-colors duration-300">Portfolio</a> |{' '}
+            <a href="#experience" className="experience text-white text-lg hover:text-lime-600 transition-colors duration-300">Experience</a> |{' '}  <a href="#contact" className="text-white hover:text-lime-600 transition-colors duration-300">Contact</a>
           </motion.p>
           <motion.p
             className="text-lg text-gray-300"

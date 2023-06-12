@@ -34,25 +34,6 @@ const Links = () => {
         ),
         href: "mailto:sab9920@nyu.edu",
       },
-      {
-        id: 4,
-        child: (
-          <>
-            Phone <IoIosCall size={30} />
-          </>
-        ),
-        href: "#",
-        className: "contact",
-      },
-      {
-        id: 5,
-        child: (
-          <>
-            Location <IoLocationSharp size={30} />
-          </>
-        ),
-        href: "#location",
-      }
     ];
   
     return (
