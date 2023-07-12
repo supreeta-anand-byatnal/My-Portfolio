@@ -44,7 +44,7 @@ const Personal = () => {
                 <img
                   src={image.src}
                   alt={`Image ${index + 1}`}
-                  className={`w-45 sm:w-64  h-auto rounded-lg transition-opacity duration-300 ${
+                  className={`w-45 sm:w-64 h-auto rounded-lg transition-opacity duration-300 ${
                     activeIndex === index ? "opacity-50" : "opacity-100"
                   }`}
                 />
