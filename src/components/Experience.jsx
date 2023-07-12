@@ -70,7 +70,7 @@ const Experience = () => {
                         icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
                       >
                         <div className="bg-lime-700 p-2 rounded-md text-white">
-                          <h3 className="first-letter:vertical-timeline-element-title text-md">{element.title}</h3>
+                          <h3 className="first-letter:vertical-timeline-element-title font-semibold text-md">{element.title}</h3>
                           <i><h6 className="vertical-timeline-element-subtitle text-sm">{element.location}</h6></i>
                         </div>
                       </VerticalTimelineElement>

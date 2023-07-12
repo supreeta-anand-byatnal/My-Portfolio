@@ -47,7 +47,7 @@ const Portfolio = () => {
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
-                <h2 className="text-center text-lime-600 text-lg font-semibold mb-2">
+                <h2 className="text-center mt-7 text-lime-600 text-lg font-semibold mb-2">
                   {name}
                 </h2>
                 <p className="text-center text-gray-300">{description}</p>
