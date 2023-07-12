@@ -19,8 +19,7 @@ const Portfolio = () => {
       demoLink: "https://article-summarizer-gpt4.netlify.app/",
       codeLink: "https://github.com/supreeta-anand-byatnal/Article-Summarizer",
       name:"Article Summarizer",
-      description: " A full-stack expense tracker application with APIs to add, delete, and update expenses. The application is built using React, Node.js, Express, and MongoDB."
-      
+      description: "An app built with Vite and React, leverages open API to generate concise summaries of lengthy articles. Users can input links, and the app processes the article and returns a summary"
     },
   ];
 
@@ -30,7 +29,7 @@ const Portfolio = () => {
 
   return (
     <div
-      name="portfolio"
+      name="portfolio" id="portfolio"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
     >
       <div className="w-full max-w-screen-lg mx-auto">
