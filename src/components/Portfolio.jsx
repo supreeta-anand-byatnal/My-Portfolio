@@ -29,7 +29,7 @@ const Portfolio = () => {
 
   return (
     <div
-      name="portfolio" id="portfolio"
+      name="portfolio" 
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
     >
       <div className="w-full max-w-screen-lg mx-auto">
@@ -47,12 +47,11 @@ const Portfolio = () => {
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div className="p-4">
                 <h2 className="text-center text-lime-600 text-lg font-semibold mb-2">
                   {name}
                 </h2>
                 <p className="text-center text-gray-300">{description}</p>
-              </div>
+              
               <div className="flex items-center justify-center">
                 <button
                   className="w-1/2 px-6 py-3 m-4 duration-200 text-lime-600 font-semibold hover:scale-105"
