@@ -8,9 +8,22 @@ import "react-vertical-timeline-component/style.min.css";
 const Experience = () => {
   const [activeTab, setActiveTab] = useState("experience");
   const skills = [
-    { name: "Skill 1", rating: 80 },
-    { name: "Skill 2", rating: 60 },
-    { name: "Skill 3", rating: 90 },
+    { name: "Java", rating: 90 },
+    { name: "Python", rating: 65 },
+    { name: "Javascript", rating: 70 },
+    { name: "React", rating: 65 },
+    { name: "SQL", rating: 85 },
+    { name: "HTML", rating: 80 },
+    { name: "CSS", rating: 80 },
+    { name: "Node.js", rating: 60 },
+    { name: "Git", rating: 80 },
+    { name: "MongoDB", rating: 60 },
+    { name: "AWS, Azure, GCP", rating: 60 },
+    { name: "Docker", rating: 60 },
+    { name: "Kubernetes", rating: 60 },
+    { name: "Spring Boot", rating: 60 },
+    { name: "REST APIs", rating: 60 }
+
     // Add more skills as needed
   ];
 
@@ -31,24 +44,9 @@ const Experience = () => {
       <div className="tabs mt-10 text-black bg-black">
       <div className={`tab ${activeTab === "experience" ? "active" : ""}`} onClick={() => handleTabChange("experience")}>Experience</div>
        
-        <div className={`tab ${activeTab === "schoolActivities" ? "active" : ""}`} onClick={() => handleTabChange("schoolActivities")}>School Activities</div>
-         
         <div className={`tab ${activeTab === "skills" ? "active" : ""}`} onClick={() => handleTabChange("skills")}>Skills</div>
       </div>
       
-
-      {activeTab === "schoolActivities" && (
-        <div className="tab-content">
-          <div name="school-activities" className="h-full w-full bg-gradient-to-b from-black via-black to-gray-800">
-            <div className="w-2/3 mx-auto h-full">
-              <div className="text-center">
-                <h1 className="text-5xl mt-20 mb-15 font-bold border-b-4 text-white border-lime-700 inline-block">School Activities</h1>
-              </div>
-              {/* Content for the School Activities tab */}
-            </div>
-          </div>
-        </div>
-      )}
 
 ...
       {activeTab === "experience" && (
@@ -83,25 +81,27 @@ const Experience = () => {
       )}
 
 {activeTab === "skills" && (
-  <div className="tab-content">
-  
-    <div className="flex text-center justify-center items-center h-full">
-      <ul className="text-white">
-        {skills.map((skill, index) => (
-          <li key={index} className="text-xl mb-4">
-            <span>{skill.name}</span>
-            <div className="relative h-2 bg-gray-700 rounded overflow-hidden mt-2">
-              <div
-                className="absolute top-0 left-0 h-full bg-lime-500"
-                style={{ width: `${skill.rating}%` }}
-              ></div>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
-)}
+        <div className="tab-content">
+          <div className="flex justify-center items-center h-full">
+            <ul className="text-white">
+              {skills.map((skill, index) => (
+                <li key={index} className="flex items-center text-xl mb-4">
+                  <span className="mr-12 px-3 w-20">{skill.name}</span>
+                  <div className="w-64 h-4 mb-6 mt-5 bg-gray-700 rounded overflow-hidden">
+                    <div
+                      className={`bg-lime-500 h-full fill-animation-${index}`}
+                      style={{
+                        width: `${skill.rating}%`,
+                        animationDuration: `${(skill.rating / 100) * 1}s`, // Adjust the animation duration based on skill rating
+                      }}
+                    ></div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
 </div>
 );
 };

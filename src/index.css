@@ -102,6 +102,237 @@
   animation: slideFromRight 1s ease-in-out forwards;
 }
 
+@keyframes fill-animation-0 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes fill-animation-1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+@keyframes fill-animation-2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 79%;
+  }
+}
+
+@keyframes fill-animation-3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes fill-animation-4 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 92%;
+  }
+}
+
+@keyframes fill-animation-5 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 92%;
+  }
+}
+@keyframes fill-animation-6 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes fill-animation-7 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-8 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-9 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-10 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-11 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-12 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-13 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-14 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-15 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+
+
+
+/* Add more keyframes for additional skills if needed */
+
+.fill-animation-0 {
+  animation-name: fill-animation-0;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-1 {
+  animation-name: fill-animation-1;
+  animation-duration: 1.5;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-2 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-3 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-4 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-5 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-6 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.fill-animation-7 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-8 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.fill-animation-9 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.fill-animation-10 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.fill-animation-11 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.fill-animation-12 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.fill-animation-13 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-14 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-15 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+/* Add more CSS classes for additional skills if needed */
+
+
 
 @keyframes slideFromAbove {
   0% {
