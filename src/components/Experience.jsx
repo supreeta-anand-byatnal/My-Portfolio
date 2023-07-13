@@ -11,6 +11,7 @@ const Experience = () => {
     { name: "Java", rating: 90 },
     { name: "Python", rating: 65 },
     { name: "Javascript", rating: 70 },
+    { name: "Typescript", rating: 60 },
     { name: "React", rating: 65 },
     { name: "SQL", rating: 85 },
     { name: "HTML", rating: 80 },
@@ -21,7 +22,7 @@ const Experience = () => {
     { name: "AWS, Azure, GCP", rating: 60 },
     { name: "Docker", rating: 60 },
     { name: "Kubernetes", rating: 60 },
-    { name: "Spring Boot", rating: 60 },
+    { name: "Spring", rating: 60 },
     { name: "REST APIs", rating: 60 }
 
     // Add more skills as needed
@@ -81,27 +82,49 @@ const Experience = () => {
       )}
 
 {activeTab === "skills" && (
-        <div className="tab-content">
-          <div className="flex justify-center items-center h-full">
-            <ul className="text-white">
-              {skills.map((skill, index) => (
-                <li key={index} className="flex items-center text-xl mb-4">
-                  <span className="mr-12 px-3 w-20">{skill.name}</span>
-                  <div className="w-64 h-4 mb-6 mt-5 bg-gray-700 rounded overflow-hidden">
-                    <div
-                      className={`bg-lime-500 h-full fill-animation-${index}`}
-                      style={{
-                        width: `${skill.rating}%`,
-                        animationDuration: `${(skill.rating / 100) * 1}s`, // Adjust the animation duration based on skill rating
-                      }}
-                    ></div>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      )}
+  <div className="tab-content">
+    <div className="flex justify-center items-center h-full">
+      <div className="grid grid-cols-2 gap-32 px-16">
+        <ul className="text-white">
+          {skills.slice(0, Math.ceil(skills.length / 2)).map((skill, index) => (
+            <li key={index} className="flex items-center text-xl mb-4">
+              <span className="mr-12 px-3 w-20">{skill.name}</span>
+              <div className="w-64 h-4 mb-6 mt-5 bg-gray-700 rounded overflow-hidden">
+                <div
+                  className={`bg-lime-500 h-full fill-animation-${index}`}
+                  style={{
+                    width: `${skill.rating}%`,
+                    animationDuration: `${(skill.rating / 100) * 1}s`, // Adjust the animation duration based on skill rating
+                  }}
+                ></div>
+              </div>
+              <span>{/* Additional content here */}</span>
+            </li>
+          ))}
+        </ul>
+        <ul className="text-white">
+          {skills.slice(Math.ceil(skills.length / 2)).map((skill, index) => (
+            <li key={index} className="flex items-center text-xl mb-4">
+              <span className="mr-16 px-3 w-20">{skill.name}</span>
+              <div className="w-64 h-4 mb-6 mt-5 bg-gray-700 rounded overflow-hidden">
+                <div
+                  className={`bg-lime-500 h-full fill-animation-${index}`}
+                  style={{
+                    width: `${skill.rating}%`,
+                    animationDuration: `${(skill.rating / 100) * 1}s`, // Adjust the animation duration based on skill rating
+                  }}
+                ></div>
+              </div>
+              <span>{/* Additional content here */}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+)}
+
+
 </div>
 );
 };
