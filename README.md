@@ -14,6 +14,8 @@ Welcome to my personal portfolio repository! This repository showcases my skills
 
 To view my portfolio, simply visit https://supreeta-anand-byatnal.netlify.app/. The website is web-first designed to be user-friendly, responsive, and visually appealing.
 
+<img width="1440" alt="Screenshot 2023-07-13 at 3 56 44 PM" src="https://github.com/supreeta-anand-byatnal/My-Portfolio/assets/38351523/e66f39b3-d9d6-40aa-b53a-69cb622e8328">
+
 ## Contact
 
 You can reach me through the following channels:
