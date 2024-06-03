@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.2em 0.25em 0 rgba(0, 0, 0, 0.25),
+    0 0.2em 1em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 0.5em 0.5em !important;
+  background: black;
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+}
+
+.tab-container {
+  display: flex;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: black;
+  transition: background-color 0.3s ease;
+  position: relative;
+  color: white;
+  border-radius: 9999px; 
+  border-width: 2px;
+}
+
+.tab:hover {
+  background-color: rgba(135, 144, 134, 0.773);
+}
+
+.tab .tab-label {
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase; /* Uppercase tab labels */
+  flex: 1; /* Distribute remaining space evenly among tab labels */
+}
+
+.tab.active {
+  background-color: #4d7c0f;
+  color: white;
+  font-weight: bold;
+  box-shadow: none; /* Remove box shadow on active tab */
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: white !important;
+    font-style: bold !important;
+    font-size: medium;
+  }
+
+  .vertical-timeline-element-content {
+    color: black;
+    background-color: black;
+    height: 3em;
+  }
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-from-left {
+  animation: slideFromLeft 2s ease-in-out forwards;
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-from-right {
+  animation: slideFromRight 1s ease-in-out forwards;
+}
+
+@keyframes fill-animation-0 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes fill-animation-1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+@keyframes fill-animation-2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 79%;
+  }
+}
+
+@keyframes fill-animation-3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes fill-animation-4 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 92%;
+  }
+}
+
+@keyframes fill-animation-5 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 92%;
+  }
+}
+@keyframes fill-animation-6 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes fill-animation-7 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-8 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-9 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-10 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-11 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-12 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-13 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-14 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-animation-15 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+
+
+
+/* Add more keyframes for additional skills if needed */
+
+.fill-animation-0 {
+  animation-name: fill-animation-0;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-1 {
+  animation-name: fill-animation-1;
+  animation-duration: 1.5;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-2 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-3 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-4 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-5 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-6 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.fill-animation-7 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-8 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.fill-animation-9 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.fill-animation-10 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.fill-animation-11 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.fill-animation-12 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.fill-animation-13 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-14 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fill-animation-15 {
+  animation-name: fill-animation-2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+/* Add more CSS classes for additional skills if needed */
+
+
+
+@keyframes slideFromAbove {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.animate-slide-from-above {
+  animation: slideFromAbove 2s ease-out forwards;
+}
+
+
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* Adjust the value to increase or decrease the gap */
+}
