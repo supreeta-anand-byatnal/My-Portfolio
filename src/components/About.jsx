@@ -16,7 +16,7 @@ const About = () => {
         </div>
         <div className="mt-10">
           <p className="text-white text-lg text-center">
-            Hi, I'm Supreeta Anand Byatnal. <b className='text-lime-600'>I'm a graduate student at New York University (NYU), Courant Institute of Mathematical Sciences pursuing my Masters in Computer Science. I will graduate in May 2024.</b> I'm originally from Bangalore, India. I did my Bachelors in Information Science and Engineering from BMS College of Engineering, Bangalore, India - Batch of 2020. With a strong passion for technology and problem-solving, I'm dedicated to expanding my knowledge and skills in the field of computer science.
+            Hi, I'm Supreeta Anand Byatnal. <b className='text-lime-600'>I graduated with a Masters in Computer Science at New York University (NYU), Courant Institute of Mathematical Sciences.</b> I'm originally from Bangalore, India. I did my Bachelors in Information Science and Engineering from BMS College of Engineering, Bangalore, India - Batch of 2020. With a strong passion for technology and problem-solving, I'm dedicated to expanding my knowledge and skills in the field of computer science.
           </p>
           <br />
           <p className="text-white text-lg text-center">
